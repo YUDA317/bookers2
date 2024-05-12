@@ -3,5 +3,6 @@ class HomesController < ApplicationController
   end
 
   def top
+    @book = Book.new
   end
 end
