@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+
     @user = User.find(current_user.id)
     @book = Book.new
   end
@@ -40,4 +41,5 @@ class UsersController < ApplicationController
       redirect_to books_path
     end
   end
+  
 end
